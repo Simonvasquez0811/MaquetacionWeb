@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <img src="https://img.icons8.com/ios-filled/32/000000/dumbbell.png" alt="logo" style="vertical-align:middle; margin-right:8px;">
+    <link rel="stylesheet" href="styles/Dashboard.css">
+    <title>Fittracker Dashboard</title>
+</head>
+<body>
+     <header class="header">
+        <div class="logo">
+            <img src="https://img.icons8.com/ios-filled/32/000000/dumbbell.png" alt="logo" style="vertical-align:middle; margin-right:8px;">
+            FitTracker
+        </div>
+        <nav class="nav">
+            <a class="active" href="../index.html">Dashboard</a>
+            <a href="templates/Workouts.html">Workouts</a>
+            <a href="templates/work schedule.html">Schedule</a>
+            <a href="templates/Progress reports.html">Reports</a>
+        </nav>
+        <div class="user-icon">
+            <span class="user-circle">SV</span>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="welcome">
+            <h1>Welcome Back, Simon</h1>
+            <p>Track your fitness journey and stay motivated</p>
+        </section>
+
+        <section class="stats">
+            <div class="card">Total Workouts<br><strong>47</strong></div>
+            <div class="card">This Week<br><strong>3</strong></div>
+            <div class="card">Personal Records<br><strong>12</strong></div>
+            <div class="card">Current Streak<br><strong>7 Days</strong></div>
+        </section>
+
+        <section class="Actions">
+            <div class="card primary">
+                <h3>Create Workout</h3>
+                <p>Design your next training session</p>
+                <button> <a href="templates/create new workout.html">Get Started →</a></button>
+            </div>
+            <br>
+            <div class="card">
+                <h3>My Workouts</h3>
+                <p>Manage your workout plans</p>
+                <button> <a href="templates/Workouts.html">View All → </a></button>
+            </div>
+            <br>
+            <div class="card">
+                <h3>Schedule</h3>
+                <p>Plan your upcoming sessions</p>
+                <button> <a href="templates/work schedule.html">View Now →</a></button>
+            </div>
+        </section>
+        
+        <section class="activity">
+            <div class="card">
+                 <h3>Recent Activity</h3>
+        <ul>
+          <li>✅ Completed Full Body Workout <span>2 hours ago</span></li>
+          <li>➕ Created Leg Day Routine <span>6 hours ago</span></li>
+          <li>🏅 New PR: Bench Press 85kg <span>3 days ago</span></li>
+        </ul>
+            </div>
+                <br>
+               <div class="card">
+        <h3>Upcoming Workouts</h3>
+        <ul>
+          <li><strong>Upper Body Strength</strong> – Today, 6:00 PM</li>
+          <li><strong>Cardio Session</strong> – Tomorrow, 7:00 AM</li>
+          <li><strong>Leg Day</strong> – Friday, 5:30 PM</li>
+        </ul>
+        <a href="templates/work schedule.html">View full schedule →</a>
+      </div>
+        </section>
+
+    </main>
+</body>
+</html>

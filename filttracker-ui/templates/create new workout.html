@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Create New Workout</title>
+  <link rel="stylesheet" href="../styles/new workout.css"/>
+</head>
+<body>
+   <header class="header">
+        <div class="logo">
+            <img src="https://img.icons8.com/ios-filled/32/000000/dumbbell.png" alt="logo" style="vertical-align:middle; margin-right:8px;">
+            FitTracker
+        </div>
+        <nav class="nav">
+            <a href="../index.html">Dashboard</a>
+            <a class="active" href="Workouts.html">Workouts</a>
+            <a href="work schedule.html">Schedule</a>
+            <a href="Progress reports.html">Reports</a>
+        </nav>
+        <div class="user-icon">
+            <span class="user-circle">SV</span>
+        </div>
+    </header>
+
+  <main class="container">
+    <div class="back-btn"> <a href="Workouts.html">← Back to Workouts</a></div>
+    <h1>Create New Workout</h1>
+    <p class="subtitle">Design your custom workout plan</p>
+
+    <form class="card">
+      <div class="form-grid">
+        <div>
+          <label>Workout Name</label>
+          <input type="text" placeholder="e.g., Upper Body Strength" />
+        </div>
+        <div>
+          <label>Workout Type</label>
+          <select>
+            <option>Select type</option>
+          </select>
+        </div>
+      </div>
+
+      <div>
+        <label>Description (Optional)</label>
+        <textarea placeholder="Brief description of your workout..."></textarea>
+      </div>
+
+      <h2>Exercises</h2>
+      <div class="exercise card">
+        <h3>Exercise 1</h3>
+        <div class="form-grid">
+          <div>
+            <label>Exercise Name</label>
+            <input type="text" placeholder="e.g., Bench Press" />
+          </div>
+          <div>
+            <label>Muscle Group</label>
+            <select>
+              <option>Select muscle group</option>
+            </select>
+          </div>
+        </div>
+
+        <label>Sets</label>
+        <div class="form-grid sets">
+          <input type="text" placeholder="Reps" />
+          <input type="text" placeholder="Weight" />
+          <span>kg</span>
+        </div>
+
+        <label>Rest Time (seconds)</label>
+        <input type="number" value="60" />
+
+        <button type="button" class="link-btn">+ Add Set</button>
+      </div>
+
+      <button type="button" class="link-btn primary">+ Add Exercise</button>
+
+      <div class="form-actions">
+        <button class="secondary" type="submit">Save as Draft</button>
+        <button class="primary" type="submit">Create Workout</button>
+      </div>
+    </form>
+  </main>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="../styles/workout.css">
+    <title>Workouts</title>
+</head>
+<body>
+     <header class="header">
+        <div class="logo">
+            <img src="https://img.icons8.com/ios-filled/32/000000/dumbbell.png" alt="logo" style="vertical-align:middle; margin-right:8px;">
+            FitTracker
+        </div>
+        <nav class="nav">
+            <a href="../index.html">Dashboard</a>
+            <a class="active" href="Workouts.html">Workouts</a>
+            <a href="work schedule.html">Schedule</a>
+            <a href="Progress reports.html">Reports</a>
+        </nav>
+        <div class="user-icon">
+            <span class="user-circle">SV</span>
+        </div>
+    </header>
+    <main class="main">
+        <section class="workouts-header">
+            <div>
+                <h1>My Workouts</h1>
+                <p>Manage and track your workout plans</p>
+            </div>
+            <button class="primary-btn" style="float:right; margin-top:20px;"> <a href="create new workout.html">+ Create Workout</a></button>
+        </section>
+
+        <section class="workouts-filters">
+            <input class="search-bar" type="text" placeholder="Search workouts...">
+            <button class="filter-btn">All Types</button>
+            <button class="filter-btn">Most Recent</button>
+        </section>
+
+        <section class="workouts-list">
+            <div class="card workout-card">
+                <div class="card-header">
+                    <strong>Upper Body Strength</strong>
+                    <span class="card-menu">⋮</span>
+                </div>
+                <div class="card-subtitle">Strength Training</div>
+                <div class="card-details">
+                    <span>⏱️ 45-60 minutes</span>
+                    <span>•</span>
+                    <span>6 exercises</span>
+                </div>
+                <div class="card-footer">
+                    <span>📅 Last performed: <b>Today</b></span>
+                    <button class="primary-btn small-btn">Start Workout <span>▶️</span></button>
+                </div>
+            </div>
+            <div class="card workout-card">
+                <div class="card-header">
+                    <strong>Leg Day Power</strong>
+                    <span class="card-menu">⋮</span>
+                </div>
+                <div class="card-subtitle">Strength Training</div>
+                <div class="card-details">
+                    <span>⏱️ 50-70 minutes</span>
+                    <span>•</span>
+                    <span>8 exercises</span>
+                </div>
+                <div class="card-footer">
+                    <span>📅 Last performed: <b>2 days ago</b></span>
+                    <button class="primary-btn small-btn">Start Workout <span>▶️</span></button>
+                </div>
+            </div>
+            <div class="card workout-card">
+                <div class="card-header">
+                    <strong>HIIT Cardio Blast</strong>
+                    <span class="card-menu">⋮</span>
+                </div>
+                <div class="card-subtitle">HIIT</div>
+                <div class="card-details">
+                    <span>⏱️ 25-30 minutes</span>
+                    <span>•</span>
+                    <span>5 exercises</span>
+                </div>
+                <div class="card-footer">
+                    <span>📅 Last performed: <b>1 week ago</b></span>
+                    <button class="primary-btn small-btn">Start Workout <span>▶️</span></button>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
