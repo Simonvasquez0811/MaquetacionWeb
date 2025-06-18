@@ -78,6 +78,11 @@ body {
   border-radius: 5px;
   cursor: pointer;
 }
+.boton{
+  text-decoration: none;
+  font-family: sans-serif;
+  color: white;
+}
 
 .workouts-filters {
   display: flex;

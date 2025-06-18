@@ -85,6 +85,19 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 1rem;
 }
+.primary-btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.boton{
+  text-decoration: none;
+  font-family: sans-serif;
+  color: rgb(0, 0, 0);
+}
 
 .card {
   background: white;
@@ -128,21 +141,172 @@ body {
 }
 
 /* Actions (secondary cards) */
-.actions {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.5rem;
-}
-
-.card button {
-  margin-top: 1rem;
-  padding: 0.4rem 0.8rem;
-  border: 1px solid #ccc;
-  background: #f5f5f5;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
+.actions-row {
+            display: flex;
+            gap: 24px;
+            margin: 32px 0 24px 0;
+            justify-content: flex-start;
+            align-items: stretch;
+        }
+        .action-card {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(60,72,88,0.07);
+            padding: 28px 24px 24px 24px;
+            flex: 1 1 0;
+            min-width: 240px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            transition: box-shadow 0.2s;
+        }
+        .action-card.create-workout {
+            background: linear-gradient(90deg, #2196f3 0%, #21cbf3 100%);
+            color: #fff;
+            box-shadow: 0 4px 16px rgba(33,150,243,0.12);
+        }
+        .action-card.create-workout h3,
+        .action-card.create-workout p {
+            color: #fff;
+        }
+        .action-icon {
+            margin-bottom: 10px;
+        }
+        .action-btn {
+            margin-top: 18px;
+            padding: 8px 18px;
+            border: none;
+            border-radius: 6px;
+            background: #f5f7fa;
+            color: #2196f3;
+            font-weight: 500;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: background 0.2s, color 0.2s;
+            display: inline-block;
+        }
+        .action-btn.primary,
+        .action-card.create-workout .action-btn {
+            background: #fff;
+            color: #2196f3;
+        }
+        .action-btn:hover {
+            background: #e3f2fd;
+            color: #1565c0;
+        }
+        @media (max-width: 900px) {
+            .actions-row {
+                flex-direction: column;
+                gap: 16px;
+            }
+            .action-card {
+                min-width: 0;
+            }
+        }
 .card button:hover {
   background: #eaeaea;
 }
+ 
+/*estilos de las ultimas 2 cajas*/
+
+.dashboard-panels {
+            display: flex;
+            gap: 32px;
+            margin-top: 24px;
+        }
+        .panel {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px #0001;
+            padding: 24px 20px 20px 20px;
+            flex: 1;
+            min-width: 320px;
+        }
+        .recent-activity ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .recent-activity li {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            margin-bottom: 18px;
+        }
+        .icon {
+            font-size: 20px;
+            margin-top: 2px;
+        }
+        .icon.success { color: #22c55e; }
+        .icon.add { color: #38bdf8; }
+        .icon.pr { color: #fbbf24; }
+        .activity-title {
+            font-weight: 500;
+            display: block;
+        }
+        .activity-time {
+            color: #888;
+            font-size: 13px;
+            margin-top: 2px;
+            display: block;
+        }
+        .upcoming-workouts .workout-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+        .workout-card {
+            background: #f8fafc;
+            border-radius: 8px;
+            padding: 12px 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .workout-card.active {
+            background: #e0f2fe;
+            border: 1.5px solid #38bdf8;
+        }
+        .workout-title {
+            font-weight: 600;
+            font-size: 15px;
+            display: block;
+        }
+        .workout-time {
+            color: #888;
+            font-size: 13px;
+            display: block;
+        }
+        .workout-badge {
+            background: #f1f5f9;
+            color: #64748b;
+            border-radius: 8px;
+            font-size: 12px;
+            padding: 2px 12px;
+            margin-left: 12px;
+        }
+        .workout-badge.today {
+            background: #38bdf8;
+            color: #fff;
+        }
+        .workout-badge.tomorrow {
+            background: #fbbf24;
+            color: #fff;
+        }
+        .workout-badge.friday {
+            background: #64748b;
+            color: #fff;
+        }
+        .full-schedule-link {
+            color: #0ea5e9;
+            font-size: 14px;
+            text-decoration: none;
+            margin-top: 8px;
+            display: inline-block;
+        }
+        @media (max-width: 900px) {
+            .dashboard-panels { flex-direction: column; gap: 20px; }
+        }
+        -->

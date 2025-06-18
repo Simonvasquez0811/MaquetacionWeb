@@ -91,6 +91,12 @@ body {
     transition: background 0.2s;
 }
 
+.boton {
+  text-decoration: none;
+  font-family: sans-serif;
+  color: white;
+}
+
 .primary-btn:hover {
     background: #0d7cd6;
 }

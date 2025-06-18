@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <img src="https://img.icons8.com/ios-filled/32/000000/dumbbell.png" alt="logo" style="vertical-align:middle; margin-right:8px;">
+    
     <link rel="stylesheet" href="styles/Dashboard.css">
     <title>Fittracker Dashboard</title>
 </head>
 <body>
      <header class="header">
         <div class="logo">
-            <img src="https://img.icons8.com/ios-filled/32/000000/dumbbell.png" alt="logo" style="vertical-align:middle; margin-right:8px;">
+            <img src="assets/icons/pesas.png" alt="logo" style="vertical-align:middle; margin-right:8px;">
             FitTracker
         </div>
         <nav class="nav">
@@ -30,53 +30,121 @@
             <p>Track your fitness journey and stay motivated</p>
         </section>
 
-        <section class="stats">
-            <div class="card">Total Workouts<br><strong>47</strong></div>
-            <div class="card">This Week<br><strong>3</strong></div>
-            <div class="card">Personal Records<br><strong>12</strong></div>
-            <div class="card">Current Streak<br><strong>7 Days</strong></div>
-        </section>
+       <section class="stats">
+    <div class="card">Total Workouts<br>
+        <span>
+            <img src="assets/icons/cronografo.png" width="30px" height="30px" alt="Total Workouts" style="vertical-align:middle; margin-right:8px;">
+            <b>47</b>
+        </span>
+    </div>
+    <div class="card">This Week<br>
+        <span>
+            <img src="assets/icons/calendario.png" width="30px" height="30px" alt="This Week" style="vertical-align:middle; margin-right:8px;">
+            <b>3</b>
+        </span>
+    </div>
+    <div class="card">Personal Records<br>
+        <span>
+            <img src="assets/icons/aprobado.png" width="30px" height="30px" alt="Personal Records" style="vertical-align:middle; margin-right:8px;">
+            <b>12</b>
+        </span>
+    </div>
+    <div class="card">Current Streak<br>
+        <span>
+            <img src="assets/icons/fuego.png" width="30px" height="30px" alt="Current Streak" style="vertical-align:middle; margin-right:8px;">
+            <b>7 Days</b>
+        </span>
+    </div>
+</section>
 
-        <section class="Actions">
-            <div class="card primary">
+        <section class="actions-row">
+            <div class="action-card create-workout">
+                <div class="action-icon">
+                    <span style="font-size: 2rem; color: #fff; background: #2196f3; border-radius: 50%; padding: 8px 12px; display: inline-block; margin-bottom: 10px;">&#43;</span>
+                </div>
                 <h3>Create Workout</h3>
                 <p>Design your next training session</p>
-                <button> <a href="templates/create new workout.html">Get Started →</a></button>
+                <a class="action-btn primary" href="templates/create new workout.html">Get Started &rarr;</a>
             </div>
-            <br>
-            <div class="card">
+            <div class="action-card">
+                <div class="action-icon">
+                    <span style="font-size: 2rem; color: #2196f3; background: #e3f2fd; border-radius: 50%; padding: 8px 12px; display: inline-block; margin-bottom: 10px;">&#9776;</span>
+                </div>
                 <h3>My Workouts</h3>
                 <p>Manage your workout plans</p>
-                <button> <a href="templates/Workouts.html">View All → </a></button>
+                <a class="action-btn" href="templates/Workouts.html">View All &rarr;</a>
             </div>
-            <br>
-            <div class="card">
+            <div class="action-card">
+                <div class="action-icon">
+                    <span style="font-size: 2rem; color: #2196f3; background: #e3f2fd; border-radius: 50%; padding: 8px 12px; display: inline-block; margin-bottom: 10px;">
+                        <img src="assets/icons/calendario.png" alt="Schedule" style="width: 28px; height: 28px; vertical-align: middle;">
+                    </span>
+                </div>
                 <h3>Schedule</h3>
                 <p>Plan your upcoming sessions</p>
-                <button> <a href="templates/work schedule.html">View Now →</a></button>
+                <a class="action-btn" href="templates/work schedule.html">Schedule Now &rarr;</a>
             </div>
         </section>
+        </div>
         
-        <section class="activity">
-            <div class="card">
-                 <h3>Recent Activity</h3>
-        <ul>
-          <li>✅ Completed Full Body Workout <span>2 hours ago</span></li>
-          <li>➕ Created Leg Day Routine <span>6 hours ago</span></li>
-          <li>🏅 New PR: Bench Press 85kg <span>3 days ago</span></li>
-        </ul>
+        <section class="dashboard-panels">
+            <div class="panel recent-activity">
+                <h3>Recent Activity</h3>
+                <ul>   
+                    <li>
+                        <span class="icon success">&#10003;</span>
+                        <div>
+                            <span class="activity-title">Completed Full Body Workout</span>
+                            <span class="activity-time">2 hours ago</span>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="icon add">&#43;</span>
+                        <div>
+                            <span class="activity-title">Created Leg Day Routine</span>
+                            <span class="activity-time">Yesterday</span>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="icon pr">&#127942;</span>
+                        <div>
+                            <span class="activity-title">New PR: Bench Press 85kg</span>
+                            <span class="activity-time">3 days ago</span>
+                        </div>
+                    </li>
+                </ul>
             </div>
-                <br>
-               <div class="card">
-        <h3>Upcoming Workouts</h3>
-        <ul>
-          <li><strong>Upper Body Strength</strong> – Today, 6:00 PM</li>
-          <li><strong>Cardio Session</strong> – Tomorrow, 7:00 AM</li>
-          <li><strong>Leg Day</strong> – Friday, 5:30 PM</li>
-        </ul>
-        <a href="templates/work schedule.html">View full schedule →</a>
-      </div>
+            <div class="panel upcoming-workouts">
+                <h3>Upcoming Workouts</h3>
+                <div class="workout-list">
+                    <div class="workout-card active">
+                        <div>
+                            <span class="workout-title">Upper Body Strength</span>
+                            <span class="workout-time">Today, 6:00 PM</span>
+                        </div>
+                        <span class="workout-badge today">Today</span>
+                    </div>
+                    <div class="workout-card">
+                        <div>
+                            <span class="workout-title">Cardio Session</span>
+                            <span class="workout-time">Tomorrow, 7:00 AM</span>
+                        </div>
+                        <span class="workout-badge tomorrow">Tomorrow</span>
+                    </div>
+                    <div class="workout-card">
+                        <div>
+                            <span class="workout-title">Leg Day</span>
+                            <span class="workout-time">Friday, 5:30 PM</span>
+                        </div>
+                        <span class="workout-badge friday">Friday</span>
+                    </div>
+                </div>
+                <a class="full-schedule-link" href="templates/work schedule.html">View full schedule &rarr;</a>
+            </div>
         </section>
+
+        
+        
 
     </main>
 </body>

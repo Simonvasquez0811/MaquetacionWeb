@@ -100,6 +100,15 @@ body {
     background: #eaf6fe;
 }
 
+.card-details {
+  display: flex;
+  gap: 8px;
+  font-size: 0.9em;
+ 
+  margin-bottom: 10px;
+}
+
+
 .secondary-btn {
     background: #fff;
     color: #1697f6;
